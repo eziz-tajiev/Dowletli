@@ -127,6 +127,8 @@ body {
     .recovery-btn {
       display: flex;
       button {
+        border: none;
+        cursor: pointer;
         width: 50%;
         font-size: 18px;
         gap: 10px;
@@ -198,6 +200,7 @@ body {
 
 // ***************************** about us
 .about {
+  position: relative;
   padding: {
     top: 74px;
     left: 114px;
@@ -205,6 +208,7 @@ body {
   }
 
   .about-perkins {
+    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,5 +221,44 @@ body {
     );
     box-shadow: 0 8px 8px -4px rgba(17, 24, 39, 0.04),
       0 20px 24px -4px rgba(17, 24, 39, 0.1);
+  }
+
+  .about-partner {
+    position: absolute;
+    top: 16%;
+    right: 8%;
+    max-width: 488px;
+    background-color: $primary;
+    color: white;
+    padding: 40px 50px 60px 60px;
+    border-radius: 2px;
+    box-shadow: 0 8px 8px -4px rgba(17, 24, 39, 0.04),
+      0 20px 24px -4px rgba(17, 24, 39, 0.1);
+    h3 {
+      font-size: 36px;
+    }
+    .about-p {
+      padding-top: 37px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 20px;
+      padding-bottom: 74px;
+      p {
+        margin: 0;
+      }
+    }
+    button {
+      background-color: white;
+      padding: 15px 12px;
+      color: $primary;
+      border-radius: 2px;
+      border: none;
+      cursor: pointer;
+      font: {
+        weight: 600;
+        size: 18px;
+      }
+    }
   }
 }
