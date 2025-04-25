@@ -87,9 +87,22 @@ body h3 {
   position: relative;
   z-index: 2;
 }
+.hero .hero-content .hero-title {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  font-weight: 600;
+  font-size: 72px;
+  padding-top: 240px;
+  padding-left: 112px;
+}
 .hero .hero-content .recovery {
-  max-width: 416px;
   background-color: rgb(53, 89, 199);
+  position: absolute;
+  max-width: 416px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
 }
 .hero .hero-content .recovery-btn {
   display: flex;
@@ -120,13 +133,4 @@ body h3 {
 }
 .hero .hero-content .recovery-title span {
   width: 312px;
-}
-.hero .hero-title {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  font-weight: 600;
-  font-size: 72px;
-  padding-top: 240px;
-  padding-left: 112px;
 }/*# sourceMappingURL=style.css.map */

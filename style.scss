@@ -100,10 +100,27 @@ body {
     min-height: 646px;
     position: relative;
     z-index: 2;
+    .hero-title {
+      display: flex;
+      flex-direction: column;
+      max-width: 700px;
+      font: {
+        weight: 600;
+        size: 72px;
+      }
+      padding: {
+        top: 240px;
+        left: 112px;
+      }
+    }
 
     .recovery {
-      max-width: 416px;
       background-color: $blue;
+      position: absolute;
+      max-width: 416px;
+      width: 100%;
+      bottom: 0;
+      right: 0;
     }
 
     .recovery-btn {
@@ -142,18 +159,6 @@ body {
       }
     }
   }
-
-  .hero-title {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    font: {
-      weight: 600;
-      size: 72px;
-    }
-    padding: {
-      top: 240px;
-      left: 112px;
-    }
-  }
 }
+
+// ******************************** reasons
