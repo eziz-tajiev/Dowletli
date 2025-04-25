@@ -133,4 +133,35 @@ body h3 {
 }
 .hero .hero-content .recovery-title span {
   width: 312px;
+}
+
+.reasons {
+  padding-bottom: 84px;
+}
+
+.reasons-title {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.reasons-cards {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+}
+.reasons-cards h3 {
+  font-size: 20px;
+}
+.reasons-cards p {
+  font-size: 16px;
+  max-width: 254px;
+}
+.reasons-cards .reasons-card {
+  border: 1.4px solid rgb(224, 227, 235);
+  border-radius: 4px;
+  padding: 20px;
+  padding-padding-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
