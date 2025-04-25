@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 $primary: rgba(0, 49, 141, 1);
 $secondary: rgba(249, 153, 93, 1);
-
+$blue: rgba(53, 89, 199, 1);
+$neutral: rgba(41, 46, 61, 1);
 * {
   box-sizing: border-box;
 }
@@ -99,6 +100,47 @@ body {
     min-height: 646px;
     position: relative;
     z-index: 2;
+
+    .recovery {
+      max-width: 416px;
+      background-color: $blue;
+    }
+
+    .recovery-btn {
+      display: flex;
+      button {
+        width: 50%;
+        font-size: 18px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: {
+          top: 10px;
+          bottom: 10px;
+        }
+        background-color: $neutral;
+        color: white;
+        img {
+          width: 26px;
+        }
+      }
+    }
+
+    .recovery-title {
+      font-size: 24px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: {
+        top: 20px;
+        bottom: 10px;
+      }
+      span {
+        width: 312px;
+      }
+    }
   }
 
   .hero-title {

@@ -87,6 +87,40 @@ body h3 {
   position: relative;
   z-index: 2;
 }
+.hero .hero-content .recovery {
+  max-width: 416px;
+  background-color: rgb(53, 89, 199);
+}
+.hero .hero-content .recovery-btn {
+  display: flex;
+}
+.hero .hero-content .recovery-btn button {
+  width: 50%;
+  font-size: 18px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(41, 46, 61);
+  color: white;
+}
+.hero .hero-content .recovery-btn button img {
+  width: 26px;
+}
+.hero .hero-content .recovery-title {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.hero .hero-content .recovery-title span {
+  width: 312px;
+}
 .hero .hero-title {
   display: flex;
   flex-direction: column;
