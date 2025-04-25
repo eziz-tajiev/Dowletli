@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -33,17 +37,16 @@ body h3 {
   padding-top: 0;
   gap: 10px;
   align-items: center;
-  position: relative;
 }
 .brand .brand-name {
   display: flex;
   flex-direction: column;
 }
-.brand__first {
+.brand .brand-name__first {
   font-size: 18px;
 }
-.brand__second {
-  font-size: 14spx;
+.brand .brand-name__second {
+  font-size: 14px;
 }
 
 .nav-links {
@@ -80,12 +83,14 @@ body h3 {
   background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
 .hero .hero-content {
+  min-height: 646px;
   position: relative;
   z-index: 2;
 }
 .hero .hero-title {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
   font-weight: 600;
   font-size: 72px;
   padding-top: 240px;
