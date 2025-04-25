@@ -164,4 +164,19 @@ body h3 {
   border-radius: 4px;
   padding: 20px;
   padding-padding-bottom: 40px;
+}
+
+.about {
+  padding-top: 74px;
+  padding-left: 114px;
+  padding-bottom: 202px;
+}
+.about .about-perkins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 902px;
+  height: 669px;
+  background: radial-gradient(circle at center, rgb(221, 222, 224), rgb(132, 138, 138));
+  box-shadow: 0 8px 8px -4px rgba(17, 24, 39, 0.04), 0 20px 24px -4px rgba(17, 24, 39, 0.1);
 }/*# sourceMappingURL=style.css.map */
