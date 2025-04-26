@@ -4,6 +4,7 @@ $secondary: rgba(249, 153, 93, 1);
 $blue: rgba(53, 89, 199, 1);
 $neutral: rgba(41, 46, 61, 1);
 $smoke: rgba(224, 227, 235, 1);
+$gray: rgba(246, 248, 247, 1);
 * {
   box-sizing: border-box;
 }
@@ -260,5 +261,57 @@ body {
         size: 18px;
       }
     }
+  }
+}
+
+// ********************************************** service
+
+.service {
+  background-color: $gray;
+  padding: {
+    bottom: 76px;
+  }
+  .service-title {
+    text-align: center;
+    padding: {
+      top: 44px;
+      bottom: 36px;
+    }
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .service-card {
+    padding: {
+      top: 38px;
+      bottom: 38px;
+    }
+    width: 270px;
+    border-radius: 4px;
+    background-color: $primary;
+    box-shadow: 0 0 37px -2px rgba(17, 24, 39, 0.05);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .card-line {
+      height: 2px;
+      width: 60px;
+      background-color: $smoke;
+    }
+  }
+  .service-card--white {
+    background-color: white;
+    color: $primary;
+  }
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 98px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
