@@ -630,3 +630,108 @@ body {
     }
   }
 }
+
+// *********************************************** contact form
+
+.contact-form {
+  background-color: $gray;
+
+  .container-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+    h1 {
+      font: {
+        size: 36px;
+        weight: 700;
+        margin-bottom: 20px;
+      }
+    }
+    .subtitle {
+      margin: 0;
+      font-size: 20px;
+      color: $neutral;
+      margin: {
+        top: 20px;
+        bottom: 38px;
+      }
+    }
+  }
+  form {
+    width: 100%;
+
+    .form-row {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      position: relative;
+      flex: 1;
+
+      &.full {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px 18px;
+        border: 1px solid $smoke;
+        border-radius: 4px;
+        &::placeholder {
+          color: rgba(163, 170, 194, 1);
+          font-size: 18px;
+        }
+      }
+
+      textarea {
+        height: 150px;
+        resize: none;
+      }
+      .required {
+        position: absolute;
+        color: red;
+        top: 12px;
+        right: 15px;
+      }
+    }
+    .select-icon {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-info {
+      text-align: left;
+      font-size: 16px;
+      color: rgba(102, 114, 153, 1);
+      margin-bottom: 25px;
+      .star-info {
+        color: red;
+      }
+    }
+    .form-submit {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 270px;
+        border: none;
+        cursor: pointer;
+        background-color: $primary;
+        color: white;
+        padding: 16px 20px;
+        font: {
+          weight: 600px;
+          size: 18px;
+        }
+      }
+    }
+  }
+}
