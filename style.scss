@@ -39,13 +39,16 @@ body {
   text-transform: uppercase;
   color: white;
   border-radius: 4px;
-  padding: 6px;
   padding-left: 0;
   padding-top: 0;
   gap: 10px;
-  align-items: center;
 
   .brand-name {
+    padding: {
+      top: 4.5px;
+      bottom: 4.5px;
+      right: 4.5px;
+    }
     display: flex;
     flex-direction: column;
     &__first {
@@ -492,6 +495,108 @@ body {
           weight: 600;
           size: 18px;
         }
+      }
+    }
+  }
+}
+
+// ****************************************** projects
+.projects {
+  padding: 80px 0;
+  .project-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project-title {
+    font: {
+      weight: 700px;
+      size: 36px;
+    }
+    margin-bottom: 40px;
+  }
+
+  .project-tabs {
+    .tabs {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .tab {
+        a {
+          text-decoration: none;
+          color: rgba(194, 199, 214, 1);
+          font: {
+            weight: 500;
+            size: 24px;
+          }
+          &:hover {
+            color: $primary;
+          }
+        }
+
+        &.active-tab {
+          a {
+            color: $primary;
+            font-weight: 600;
+            border-left: 4px solid $primary;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    gap: 32px;
+
+    .project-card {
+      border-radius: 2px;
+      .project-image {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .project-info {
+        color: white;
+        background-color: $primary;
+        padding: 12px {
+          bottom: 16px;
+        }
+        h3 {
+          margin-bottom: 12px;
+          font: {
+            weight: 700px;
+            size: 20px;
+          }
+        }
+        p {
+          margin: 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: flex-end;
+    .pagination {
+      display: flex;
+      .pagination-btn {
+        border: none;
+        background-color: $neutral;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
       }
     }
   }

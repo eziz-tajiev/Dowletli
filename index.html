@@ -207,19 +207,85 @@
       <section class="projects">
         <div class="project-container">
           <h2 class="project-title">Projects</h2>
-          <div class="project-tabs">
-            <ul class="tabs">
-              <li class="tab active"><a href="#">All</a></li>
-              <li class="tab"><a href="#">Building</a></li>
-              <li class="tab"><a href="#">Repairing</a></li>
-              <li class="tab"><a href="#">Other</a></li>
-            </ul>
-          </div>
-          <div class="project-grid">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="../Dowletli/image/wildstone.png" alt="Wildstone" />
+          <div class="project-flex">
+            <div class="project-tabs">
+              <ul class="tabs">
+                <li class="tab active-tab"><a href="#">All</a></li>
+                <li class="tab"><a href="#">Building</a></li>
+                <li class="tab"><a href="#">Repairing</a></li>
+                <li class="tab"><a href="#">Other</a></li>
+              </ul>
+            </div>
+
+            <div class="project-grid">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="../Dowletli/image/wildstone.png" alt="Wildstone" />
+                </div>
+                <div class="project-info">
+                  <h3 class="project-title">Wildstone Infra Hotel</h3>
+                  <p class="project-desc">Repaired engine</p>
+                </div>
               </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="../Dowletli/image/wish.png" alt="Wishstone" />
+                </div>
+                <div class="project-info">
+                  <h3 class="project-title">Wish Stone Building</h3>
+                  <p class="project-desc">Repaired engine</p>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="../Dowletli/image/parkinston.png"
+                    alt="Parkinston"
+                  />
+                </div>
+                <div class="project-info">
+                  <h3 class="project-title">Mr. Parkinston’s House</h3>
+                  <p class="project-desc">Repaired engine</p>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="../Dowletli/image/oregana-height.png"
+                    alt="Oregano"
+                  />
+                </div>
+                <div class="project-info">
+                  <h3 class="project-title">Oregano Height</h3>
+                  <p class="project-desc">Repaired engine</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Пагинация перемещена после project-flex -->
+          <div class="pagination-container">
+            <div class="pagination">
+              <button class="pagination-btn">
+                <img src="../Dowletli/icons/back.svg" alt="back" />
+                <span>Back</span>
+              </button>
+
+              <div class="pagination-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+
+              <button class="pagination-btn">
+                <span>Next</span>
+                <img src="../Dowletli/icons/next.svg" alt="next" />
+              </button>
             </div>
           </div>
         </div>
