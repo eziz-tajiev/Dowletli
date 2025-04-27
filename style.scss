@@ -5,6 +5,7 @@ $blue: rgba(53, 89, 199, 1);
 $neutral: rgba(41, 46, 61, 1);
 $smoke: rgba(224, 227, 235, 1);
 $gray: rgba(246, 248, 247, 1);
+$neo: rgba(82, 91, 122, 1);
 * {
   box-sizing: border-box;
 }
@@ -102,6 +103,7 @@ body {
     min-height: 646px;
     position: relative;
     z-index: 2;
+
     .hero-title {
       display: flex;
       flex-direction: column;
@@ -169,6 +171,7 @@ body {
 .reasons {
   padding-bottom: 84px;
 }
+
 .reasons-title {
   padding: {
     top: 60px;
@@ -190,6 +193,7 @@ body {
     font-size: 16px;
     max-width: 254px;
   }
+
   .reasons-card {
     border: 1.4px solid $smoke;
     border-radius: 4px;
@@ -238,6 +242,7 @@ body {
     h3 {
       font-size: 36px;
     }
+
     .about-p {
       padding-top: 37px;
       display: flex;
@@ -271,6 +276,7 @@ body {
   padding: {
     bottom: 76px;
   }
+
   .service-title {
     text-align: center;
     padding: {
@@ -281,6 +287,7 @@ body {
   h2 {
     font-size: 36px;
   }
+
   .service-card {
     padding: {
       top: 38px;
@@ -296,16 +303,19 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+
     .card-line {
       height: 2px;
       width: 60px;
       background-color: $smoke;
     }
   }
+
   .service-card--white {
     background-color: white;
     color: $primary;
   }
+
   .service-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -313,5 +323,131 @@ body {
     gap: 98px;
     max-width: 800px;
     margin: 0 auto;
+  }
+}
+
+// *********************************************** stats
+.stats {
+  padding: 90px 0;
+
+  .stat-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .stat-cards {
+    position: relative;
+    width: 520px;
+    height: 450px;
+  }
+
+  .stat-card {
+    background-color: white;
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
+      0 12px 16px -4px rgba(17, 24, 39, 0.1);
+    position: absolute;
+
+    .stat-number {
+      font: {
+        weight: 600;
+        size: 72px;
+      }
+    }
+
+    .stat-title {
+      font-size: 18px;
+      color: $neo;
+      border-left: 7px solid $secondary;
+      padding-left: 12px;
+      margin-left: 10px;
+    }
+
+    img {
+      position: absolute;
+      max-width: 78px;
+    }
+  }
+
+  .stat-client {
+    top: 0;
+    right: 0;
+    width: 260px;
+    z-index: 4;
+
+    .client-icon {
+      top: -25px;
+      right: -30px;
+    }
+  }
+  .stat-doc {
+    top: 80px;
+    left: 0px;
+    width: 280px;
+    z-index: 3;
+
+    .doc-icon {
+      left: -25px;
+      top: -35px;
+    }
+  }
+
+  .stat-win {
+    top: 225px;
+    right: 50px;
+    width: 250px;
+    z-index: 3;
+
+    .win-icon {
+      right: -30px;
+      top: -30px;
+    }
+  }
+
+  .stat-plan {
+    top: 320px;
+    left: 0;
+    width: 260px;
+    z-index: 1;
+
+    .plan-icon {
+      right: -30px;
+      bottom: -30px;
+    }
+  }
+
+  .experience {
+    max-width: 450px;
+
+    h2 {
+      font: {
+        weight: 700;
+        size: 60px;
+      }
+      color: $primary;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 20px;
+      color: $neo;
+      margin-bottom: 60px;
+    }
+
+    .experience-btn {
+      border: none;
+      border-radius: 2px;
+      background-color: $primary;
+      color: white;
+      padding: 16px 39px;
+      font: {
+        weight: 600;
+        size: 18px;
+      }
+    }
   }
 }
