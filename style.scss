@@ -556,6 +556,7 @@ body {
 
     .project-card {
       border-radius: 2px;
+
       .project-image {
         img {
           width: 100%;
@@ -587,16 +588,44 @@ body {
   .pagination-container {
     display: flex;
     justify-content: flex-end;
+
     .pagination {
+      width: 800px;
+      margin-top: 32px;
       display: flex;
+      justify-content: center;
+
+      .pagination-dots {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        padding: {
+          left: 33px;
+          right: 33px;
+        }
+
+        .dot {
+          border-radius: 50%;
+          background-color: rgba(246, 248, 247, 1);
+          width: 16px;
+          height: 16px;
+        }
+
+        .active {
+          background-color: $primary;
+        }
+      }
       .pagination-btn {
+        font-size: 18px;
         border: none;
         background-color: $neutral;
         color: white;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
         padding: 10px 20px;
+        width: 295px;
       }
     }
   }
