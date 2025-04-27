@@ -229,6 +229,16 @@ body h3 {
 .reasons {
   padding-bottom: 84px;
 }
+@media (max-width: 768px) {
+  .reasons {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .reasons {
+    padding-bottom: 40px;
+  }
+}
 
 .reasons-title {
   padding-top: 60px;
@@ -242,6 +252,20 @@ body h3 {
   display: flex;
   justify-content: center;
   gap: 65px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 768px) {
+  .reasons-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .reasons-cards {
+    gap: 20px;
+  }
 }
 .reasons-cards h3 {
   font-size: 20px;
