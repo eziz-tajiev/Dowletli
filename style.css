@@ -598,4 +598,57 @@ body h3 {
   padding: 16px 20px;
   font-weight: 600px;
   font-size: 18px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.bottom-container .bottom-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.bottom-container .bottom-details .info-label {
+  color: rgb(0, 49, 141);
+  font-weight: 500;
+  font-size: 20px;
+}
+.bottom-container .bottom-details .info-value {
+  color: rgb(41, 46, 61);
+  font-size: 20px;
+}
+.bottom-container .bottom-details .brand {
+  width: 150px;
+  padding-bottom: 6px;
+}
+.bottom-container .bottom-social {
+  display: flex;
+  gap: 130px;
+}
+.bottom-container .bottom-social .social-label {
+  padding-bottom: 20px;
+  color: rgb(0, 49, 141);
+  font-weight: 500;
+  font-size: 20px;
+}
+.bottom-container .bottom-social .social-icons {
+  display: flex;
+  gap: 20px;
+}
+.bottom-container .bottom-social .btn-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.bottom-container .bottom-social .btn-social button {
+  color: white;
+  background-color: rgb(249, 153, 93);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

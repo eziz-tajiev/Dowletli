@@ -735,3 +735,68 @@ body {
     }
   }
 }
+
+//  ******************************************* bottom contacts
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+
+  .bottom-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .info-label {
+      color: $primary;
+      font: {
+        weight: 500;
+        size: 20px;
+      }
+    }
+    .info-value {
+      color: $neutral;
+      font-size: 20px;
+    }
+    .brand {
+      width: 150px;
+      padding-bottom: 6px;
+    }
+  }
+  .bottom-social {
+    .social-label {
+      padding-bottom: 20px;
+      color: $primary;
+      font: {
+        weight: 500;
+        size: 20px;
+      }
+    }
+    display: flex;
+    gap: 130px;
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn-social {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      button {
+        color: white;
+        background-color: $secondary;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font: {
+          weight: 600;
+          size: 18px;
+        }
+      }
+    }
+  }
+}
