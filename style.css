@@ -25,6 +25,18 @@ body h3 {
   padding: 16px 112px;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 16px 40px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 
 .brand {
   display: flex;
@@ -54,6 +66,7 @@ body h3 {
   display: flex;
   gap: 50px;
   list-style: none;
+  padding: 0;
 }
 .nav-links a {
   text-decoration: none;
@@ -62,6 +75,19 @@ body h3 {
 }
 .nav-links a:hover {
   color: rgb(249, 153, 93);
+}
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 0;
+  }
 }
 
 .hero {
