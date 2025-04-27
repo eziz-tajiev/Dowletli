@@ -797,10 +797,34 @@ body {
 
 // ****************************************** projects
 .projects {
-  padding: 80px 0;
+  padding: 80px 0px;
+
+  @media (max-width: $tablet) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+
   .project-flex {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .project-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: $mobile) {
+      padding: 0 15px;
+    }
   }
   .project-title {
     font: {
@@ -808,6 +832,16 @@ body {
       size: 36px;
     }
     margin-bottom: 40px;
+
+    @media (max-width: $tablet) {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
   }
 
   .project-tabs {

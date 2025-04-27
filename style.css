@@ -723,16 +723,54 @@ body h3 {
 }
 
 .projects {
-  padding: 80px 0;
+  padding: 80px 0px;
+}
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 480px) {
+  .projects {
+    padding: 40px 0;
+  }
 }
 .projects .project-flex {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .projects .project-flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.projects .project-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 480px) {
+  .projects .project-container {
+    padding: 0 15px;
+  }
+}
 .projects .project-title {
   font-weight: 700px;
   font-size: 36px;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .projects .project-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .projects .project-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 }
 .projects .project-tabs .tabs {
   list-style: none;
