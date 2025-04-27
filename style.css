@@ -93,7 +93,7 @@ body h3 {
 .hero {
   background-image: url(../Dowletli/image/tools.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   min-height: 646px;
   position: relative;
@@ -123,6 +123,22 @@ body h3 {
   padding-top: 240px;
   padding-left: 112px;
 }
+@media (max-width: 768px) {
+  .hero .hero-content .hero-title {
+    font-size: 48px;
+    max-width: 500px;
+    padding-top: 180px;
+    padding-left: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .hero .hero-content .hero-title {
+    font-size: 36px;
+    max-width: 300px;
+    padding-top: 120px;
+    padding-left: 20px;
+  }
+}
 .hero .hero-content .recovery {
   background-color: rgb(53, 89, 199);
   position: absolute;
@@ -130,6 +146,18 @@ body h3 {
   width: 100%;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 768px) {
+  .hero .hero-content .recovery {
+    max-width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .hero .hero-content .recovery {
+    position: relative;
+    max-width: 100%;
+    margin-top: 90%;
+  }
 }
 .hero .hero-content .recovery-btn {
   display: flex;
@@ -151,6 +179,23 @@ body h3 {
 .hero .hero-content .recovery-btn button img {
   width: 26px;
 }
+@media (max-width: 480px) {
+  .hero .hero-content .recovery-btn button img {
+    width: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-content .recovery-btn button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .hero .hero-content .recovery-btn button {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
 .hero .hero-content .recovery-title {
   font-size: 24px;
   color: white;
@@ -162,6 +207,23 @@ body h3 {
 }
 .hero .hero-content .recovery-title span {
   width: 312px;
+}
+@media (max-width: 768px) {
+  .hero .hero-content .recovery-title span {
+    width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-content .recovery-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hero .hero-content .recovery-title {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
 }
 
 .reasons {

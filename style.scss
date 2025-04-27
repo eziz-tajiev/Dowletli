@@ -103,7 +103,7 @@ body {
 .hero {
   background-image: url(../Dowletli/image/tools.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   min-height: 646px;
   position: relative;
@@ -141,6 +141,24 @@ body {
         top: 240px;
         left: 112px;
       }
+
+      @media (max-width: $tablet) {
+        font-size: 48px;
+        max-width: 500px;
+        padding: {
+          top: 180px;
+          left: 60px;
+        }
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 36px;
+        max-width: 300px;
+        padding: {
+          top: 120px;
+          left: 20px;
+        }
+      }
     }
 
     .recovery {
@@ -150,6 +168,15 @@ body {
       width: 100%;
       bottom: 0;
       right: 0;
+
+      @media (max-width: $tablet) {
+        max-width: 350px;
+      }
+      @media (max-width: $mobile) {
+        position: relative;
+        max-width: 100%;
+        margin-top: 90%;
+      }
     }
 
     .recovery-btn {
@@ -171,6 +198,20 @@ body {
         color: white;
         img {
           width: 26px;
+
+          @media (max-width: $mobile) {
+            width: 20px;
+          }
+        }
+        @media (max-width: $tablet) {
+          font-size: 16px;
+        }
+        @media (max-width: $mobile) {
+          font-size: 14px;
+          padding: {
+            top: 8px;
+            bottom: 8px;
+          }
         }
       }
     }
@@ -187,6 +228,22 @@ body {
       }
       span {
         width: 312px;
+
+        @media (max-width: $tablet) {
+          width: 280px;
+        }
+      }
+
+      @media (max-width: $tablet) {
+        font-size: 20px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 18px;
+        padding: {
+          top: 15px;
+          bottom: 8px;
+        }
       }
     }
   }
