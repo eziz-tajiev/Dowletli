@@ -364,4 +364,38 @@ body h3 {
   padding: 16px 39px;
   font-weight: 600;
   font-size: 18px;
+}
+
+.ads {
+  padding: 90px 0;
+  background-image: url(../Dowletli/image/back-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ads .ads-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ads .ads-container .ads-info {
+  color: white;
+}
+.ads .ads-container .ads-info h3 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+}
+.ads .ads-container .ads-info p {
+  font-size: 24px;
+  margin: 0;
+}
+.ads .ads-container .ads-btn button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

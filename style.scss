@@ -451,3 +451,48 @@ body {
     }
   }
 }
+
+// ****************************************** ads
+
+.ads {
+  padding: 90px 0;
+  background-image: url(../Dowletli/image/back-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .ads-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ads-info {
+      color: white;
+      h3 {
+        margin-bottom: 30px;
+        font: {
+          weight: 700;
+          size: 36px;
+        }
+      }
+      p {
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+
+    .ads-btn {
+      button {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 16px 20px;
+        font: {
+          weight: 600;
+          size: 18px;
+        }
+      }
+    }
+  }
+}
