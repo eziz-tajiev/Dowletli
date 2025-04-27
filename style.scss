@@ -800,3 +800,17 @@ body {
     }
   }
 }
+
+// ********************************************* fotter
+
+footer {
+  background-color: $primary;
+  .footer-desc {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 25px {
+      left: 112px;
+    }
+  }
+}
