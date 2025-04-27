@@ -287,6 +287,21 @@ body h3 {
   padding-left: 114px;
   padding-bottom: 202px;
 }
+@media (max-width: 768px) {
+  .about {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+  }
+}
 .about .about-perkins {
   border-radius: 2px;
   display: flex;
@@ -296,6 +311,21 @@ body h3 {
   height: 669px;
   background: radial-gradient(circle at center, rgb(221, 222, 224), rgb(132, 138, 138));
   box-shadow: 0 8px 8px -4px rgba(17, 24, 39, 0.04), 0 20px 24px -4px rgba(17, 24, 39, 0.1);
+}
+@media (max-width: 768px) {
+  .about .about-perkins {
+    max-width: 100%;
+    height: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .about .about-perkins {
+    height: 350px;
+  }
+  .about .about-perkins img {
+    max-width: 80%;
+    height: auto;
+  }
 }
 .about .about-partner {
   position: absolute;
@@ -308,8 +338,34 @@ body h3 {
   border-radius: 2px;
   box-shadow: 0 8px 8px -4px rgba(17, 24, 39, 0.04), 0 20px 24px -4px rgba(17, 24, 39, 0.1);
 }
+@media (max-width: 768px) {
+  .about .about-partner {
+    position: relative;
+    top: -60px;
+    right: 0;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px 40px 40px 40px;
+  }
+}
+@media (max-width: 480px) {
+  .about .about-partner {
+    top: -40px;
+    padding: 25px 30px;
+  }
+}
 .about .about-partner h3 {
   font-size: 36px;
+}
+@media (max-width: 768px) {
+  .about .about-partner h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .about .about-partner h3 {
+    font-size: 24px;
+  }
 }
 .about .about-partner .about-p {
   padding-top: 37px;
@@ -318,6 +374,21 @@ body h3 {
   gap: 20px;
   font-size: 20px;
   padding-bottom: 74px;
+}
+@media (max-width: 768px) {
+  .about .about-partner .about-p {
+    padding-top: 25px;
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .about .about-partner .about-p {
+    padding-top: 20px;
+    gap: 15px;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
 }
 .about .about-partner .about-p p {
   margin: 0;
@@ -331,6 +402,13 @@ body h3 {
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
+}
+@media (max-width: 480px) {
+  .about .about-partner button {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+  }
 }
 
 .service {
